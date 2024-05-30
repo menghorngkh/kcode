@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>kcode</title>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header max-w-[1200px] m-auto">
+
+        <!-- top page -->
+        <div class="hidden md:block">
+            <div class="top-page flex justify-between p-3">
+                <div class="left">
+                    <span class="">Trang game cá cược số 1 Châu Á</span>
+                </div>
+                <div class="right ">
+                    <i class="ion-social-facebook"></i>
+                    <i class="ion-social-instagram"></i>
+                    <i class="ion-social-twitter"></i>
+                    <i class="ion-ios-email"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- head-item  -->
+        <div class="head-item ">
+            <div class="open-icon " onclick="OpenNav()"><ion-icon name="menu"></ion-icon></div>
+
+            <div onclick="url()" class="logo cursor-pointer"><img src="./img/hay88-logo.webp"></div>
+
+            <nav id="Nav">
+                <div class="close-icon">
+                    <ion-icon onclick="CloseNav()" name="close" class=""></ion-icon>
+                </div>
+
+                <div class="wrap">
+                    <div class="search">
+                       <input type="text" class="searchTerm" placeholder="Search...">
+                       <button type="submit" class="searchButton">
+                        <ion-icon name="search"></ion-icon>
+                      </button>
+                    </div>
+                 </div>
+
+                <ul class="nav-lists text-white md:hidden">
+                    <li>TRANG CHỦ </li>
+                    <li><div class="flex items-center gap-2">
+                        <div><img src="img/hot-gif.gif" alt=""></div>
+                        <span>XỔ SỐ</span>
+                    </div></li>
+                    <li>
+                        <div class="flex items-center gap-2">
+                            <div><img src="img/hot-gif.gif" alt=""></div>
+                            <span>THỂ THAO</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center gap-2">
+                            <div><img src="img/hot-gif.gif" alt=""></div>
+                            <span>CASINO</span>
+                        </div>
+                    </li>
+                    <li>BẮN CÁ</li>
+                    <li>GAME BÀI</li>
+                    <li>NỔ HỦ</li>
+                    <li>ƯU ĐÃI</li>
+                    <li>HỔ TRỢ</li>
+                    <li>HƯỚNG DẪN</li>
+                    <li>LIÊN HỆ</li>
+                    <li>DANG NHAP</li>
+                    <li><i class="ion-ios-email"></i>NEWSLETTER</li>
+
+                    <div class="contect">
+                        <i class="ion-social-facebook"></i>
+                        <i class="ion-social-instagram"></i>
+                        <i class="ion-social-twitter"></i>
+                        <i class="ion-ios-email"></i>
+                    </div>
+                </ul>
+
+                <div class="log-item text-white hidden md:block">
+                    <button class="">ĐĂNG KÝ</button>
+                    <button class="">ĐĂNG NHẬP</button>
+                </div>
+            </nav>
+
+            <div class="hidden md:block">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Search...">
+                    <button type="submit" class="searchButton">
+                      <ion-icon name="search"></ion-icon>
+                   </button>
+                 </div>
+            </div>
+            
+        </div>
+
+        <div class="">
+            <div class="hidden md:block">
+                <ul class="nav-list ">
+                    <a href="#" class="links">TRANG CHỦ</a>
+                    <a href="#" class="links"> 
+                        <div class="flex items-center gap-2">
+                            <div><img src="img/hot-gif.gif" alt=""></div>
+                            <span>XỔ SỐ</span>
+                        </div> 
+                    </a>
+                    <a href="#" class="links">
+                        <div class="flex items-center gap-2">
+                            <div><img src="img/hot-gif.gif" alt=""></div>
+                            <span>THỂ THAO</span>
+                        </div>
+                    </a>
+                    <a href="#" class="links"> 
+                        <div class="flex items-center gap-2">
+                            <div><img src="img/hot-gif.gif" alt=""></div>
+                            <span>CASINO</span>
+                        </div>
+                    </a>
+                    <a href="#" class="links" >BẮN CÁ</a>
+                    <a href="#" class="links">GAME BÀI</a>
+                    <a href="#" class="links">NỔ HỦ</a>
+                    <a href="#" class="links">ƯU ĐÃI <i class="ion-chevron-down"></i></a>
+                    <a href="#" class="links">HỔ TRỢ <i class="ion-chevron-down"></i></a>
+                    <a href="#" class="links">LIÊN HỆ</a>
+                </ul>
+            </div>
+            <div class="btncenter ">
+                <button class="">ĐĂNG KÝ</button>
+                <button class="">ĐĂNG NHẬP</button>
+            </div>
+        </div>
+        
+    </div>
+    <!-- end of header -->
+    
+    <!-- hero -->
+    <div class="hero container-max-width">
+
+        <div class="content ">
+            <div class="title">
+                <h1>Đăng Ký Hay88 Nhận Khuyến Mãi Ngay</h1>
+                <a class="btn-red">Like Dang ky Hay88</a>
+            </div>
+            <p>Khi tham gia chơi casino tại <span class="red">Hay88</span> <b>Việt Nam</b>, người chơi sẽ dễ dàng nhận được vô vàn những ưu đãi cực khủng dành cho bạn khi đặt cược tại đây. Kèm với đó tại đây nhà cái còn hỗ trợ các hình thức chơi mới lạ như xổ số và các hình thức cược thể thao đầy hấp dẫn. Vì thế mà khi mà người chơi muốn có sự đa dạng các hình thức chơi hãy nhanh chóng lựa chọn tham gia chơi casino tại nhà cái uy tín này.</p>
+            <h2>Tổng quan nhà cái Hay88</h2>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero1.webp" alt="">
+                </div>
+            </div>
+           <p>
+                <i class="ion-record"></i><span>Với hiện nay Hay88 nhận được rất nhiều sự quan tâm của người chơi tham gia casino tại thị trường trên toàn thế giới. Nhà cái hiện đã có được các giấy chứng nhận của những tổ chức casino vô cùng uy tín trên thế giới xác nhận đầy đủ khi mà tham gia chơi tại nhà cái uy tín này.</span>
+           </p>
+            
+           <p>
+                <i class="ion-record"></i><span>Với hiện nay Hay88 nhận được rất nhiều sự quan tâm của người chơi tham gia casino tại thị trường trên toàn thế giới. Nhà cái hiện đã có được các giấy chứng nhận của những tổ chức casino vô cùng uy tín trên thế giới xác nhận đầy đủ khi mà tham gia chơi tại nhà cái uy tín này.</span>
+           </p>
+           <p>
+                <i class="ion-record"></i><span>Với hiện nay Hay88 nhận được rất nhiều sự quan tâm của người chơi tham gia casino tại thị trường trên toàn thế giới. Nhà cái hiện đã có được các giấy chứng nhận của những tổ chức casino vô cùng uy tín trên thế giới xác nhận đầy đủ khi mà tham gia chơi tại nhà cái uy tín này.</span>
+           </p>
+        </div>
+        <div class="content">
+            <h2>Tổng quan nhà cái Hay88</h2>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero2.webp" alt="">
+                </div>
+            </div>
+            <div class="line">
+                <p>Nếu bạn đã quen với việc tham gia các trò chơi casino trực tuyến, thì không thể không nhắc đến sự liên kết giữa game casino và các nhà cái trực tuyến. Trong số đó, trò chơi casino trên Hay88 thu hút sự quan tâm của nhiều người chơi nhờ những ưu điểm đặc biệt.</p>
+            </div>
+            <div class="line">
+                <p>Nếu bạn lo lắng về các khoản phí khi chơi casino, thì Hay88 là lựa chọn phù hợp với mức phí thu mỗi vòng chơi bài thấp. Điều này giúp người chơi giảm thiểu tổn thất và tăng cơ hội chiến thắng.</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero3.webp" alt="">
+                </div>
+            </div>
+            <div class="line">
+                <p>Nếu bạn đã quen với việc tham gia các trò chơi casino trực tuyến, thì không thể không nhắc đến sự liên kết giữa game casino và các nhà cái trực tuyến. Trong số đó, trò chơi casino trên Hay88 thu hút sự quan tâm của nhiều người chơi nhờ những ưu điểm đặc biệt.</p>
+            </div>
+            <div class="line">
+                <p>Nếu bạn lo lắng về các khoản phí khi chơi casino, thì Hay88 là lựa chọn phù hợp với mức phí thu mỗi vòng chơi bài thấp. Điều này giúp người chơi giảm thiểu tổn thất và tăng cơ hội chiến thắng.</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Tải app Hay88 đặt cược dễ dàng và nhanh chóng</h2>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero4.jpg" alt="">
+                </div>
+            </div>
+            <div class="line">
+                <p>Đối với người chơi tham gia khi chưa <b>tải Hay88</b> về máy điện thoại của mình thì việc chơi cá cược tại đây sẽ khó khăn hơn rất nhiều. Do vậy mà nếu bạn muốn tìm kiếm chơi đơn giản giao diện đẹp có thể <span class="red">tải app Hay88</span> về máy của mình ngay chỉ cần với vài bước đơn giản dưới đây bạn sẽ tải thành công.</p>
+            </div>
+            <div class="line">
+                <p><b>Bước 1</b>: Bạn hãy vào trang chủ Hay88 sau đó người chơi thấy biểu tượng tải về bạn chỉ cần nhấp chuột vào tải về.</p>
+            </div>
+            <div class="line">
+                <p><b>Bước 2</b>: Sau khi tải thành công bạn chỉ cần cài đặt và chờ đợi ít phút để ứng dụng thành công vào máy điện thoại. Giờ người chơi chỉ cần tìm và mở ứng dụng lên là có thể chơi cá cược rồi.</p>
+            </div>
+            <div class="line">
+                <p><b>Bước 3</b>: Bạn hãy vào trang chủ Hay88 sau đó người chơi thấy biểu tượng tải về bạn chỉ cần nhấp chuột vào tải về.</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Đăng ký Hay88 tham gia cá cược tốt nhất</h2>
+            <div class="line">
+                <p>Với <b>nhà cái Hay88 </b>việt nam khi mà bạn đăng ký tham gia tại đây sẽ được trải nghiệm nhiều sự hấp dẫn. Cùng với đó tại đây còn giúp cho bạn khi mà <span class="red">đăng ký Hay88</span> sẽ không cần phải mất quá nhiều thời gian nhà cái đã tối ưu quá trình này chỉ với vài bước là bạn đã có thể mở một tài khoản tại đây.</p>
+            </div>
+            <div class="line">
+                <p><b>Bước 1</b>: Bước 1: Bạn cần vào trang cá cược của Hay88 sau đó người chơi hãy tìm đến mục đăng ký và bạn chỉ cần ấn chuột phải vào đó là có thể hiện ra các bước tiếp theo.</p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero5.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>Bước 2</b>:  Khi mà đã ấn đăng ký thành công rồi, người chơi sẽ thấy các thông tin cần nhập để tạo tài khoản tại đây. Bạn cần chú ý những thông tin như họ tên và số điện thoại. Khi đã nhập xong chỉ ấn đăng ký là hoàn tất mở tài khoản tại đây.</p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero6.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Nạp tiền Hay88 chơi cá cược nhận ưu đãi lớn</h2>
+            <div class="line">
+                <p>Thêm một điều vô cùng đặc biệt tại đây khi mà người chơi <span class="red"> nạp tiền Hay88 </span> sẽ dễ dàng nhận được các khuyến mãi cực khủng tại nhà cái này. Do vậy mà người chơi chỉ cần mới tham gia và thực hiện các bước nạp tiền dưới đây là đã có thể thành công nhận ưu đãi của nhà cái này.</p>
+            </div>
+            <div class="line">
+                <p><b>Bước 1</b>: Bạn sẽ cần vào tài khoản cá cược sau đó người chơi hãy ấn vào mục tôi ở góc màn hình, bạn sẽ thấy biểu tượng nạp tiền bạn chỉ cần nhấp chuột vào đây.</p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero7.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>Chuyển tiền bằng mã QR</b> : Với cách chuyển qua mã QR đây là một cách nhanh và an toàn nhất hiện nay dành cho người chơi muốn sự đơn giản nhất.</p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero8.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>Chuyển tiền qua thẻ ngân hàng</b>: Với nhiều người khi mà muốn chuyển bằng số ngân hàng cũng rất dễ dàng. Bạn sẽ chỉ cần thực hiện vài bước là đã có thể nhận tiền trong tài khoản.
+
+                </p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero8.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>CChuyển tiền bằng thẻ điện thoại </b>:  Cách này cũng luôn được nhiều người thích nhanh chóng lựa chọn. Bởi vì khi sử dụng cách này bạn chỉ cần mua thẻ điện thoại sẽ dễ dàng nạp tiền thành công.
+                </p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero8.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>Bước 3</b>: Sau khi mà bạn đã có thể chọn xong một cách thức nạp tiền rồi, giờ người chơi chỉ cần nhập số tiền và lựa chọn loại nạp tại nhà cái Hay88. Bạn hãy bấm nạp tiền và chuyển theo đúng thông tin nhà cái đã đưa là đã có thể thành công.
+                </p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero9.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Tổng quan nhà cái Hay88</h2>
+            <div class="line">
+                <p>Với quá trình <span class="red">rút tiền Hay88</span> người chơi cũng chỉ cần thực hiện vài bước vô cùng đơn giản là đã có thể hoàn thành quá trình rút tiền tại đây. Dưới đây là các bước giúp cho bạn có thể nhanh chóng hoàn thành quá trình rút tiền tại nhà cái uy tín này.</p>
+            </div>
+            <div class="line">
+                <p><b>Bước 1</b> :Khi đã vào tài khoản cá cược bạn chỉ cần tìm đến mục rút tiền sau đó bấm chuột vào đó.</p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero10.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>Bước 2</b>: Khi bấm rút tiền nếu như bạn lần đầu thực hiện rút tại đây sẽ yêu cầu bạn gõ mật khẩu rút tiền, bạn hãy gõ chính xác và xác nhận lại đúng thông tin rút tại đây.
+                </p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero11.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="line">
+                <p><b>Bước 3</b>:  Người chơi khi đã cập nhật xong mất khẩu rồi, giờ chỉ cần bổ sung thông tin tài khoản ngân hàng rút và bạn bận ấn cập nhật là có thể xong bước này.
+                </p>
+            </div>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero12.png" alt="">
+                </div>
+            </div>
+            <div class="line">
+                <p><b>Bước 3</b>:  Người chơi khi đã cập nhật xong mất khẩu rồi, giờ chỉ cần bổ sung thông tin tài khoản ngân hàng rút và bạn bận ấn cập nhật là có thể xong bước này.
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Hay88 đa dạng các sản phẩm cá cược</h2>
+            <div class="line">
+                <p><b>Hay88</b> hiện nay cung cấp một loạt trò chơi hấp dẫn, từ <span class="red">Hay88 lottery</span> đến các hình thức đặt cược khác, giúp người chơi mới đăng ký tham gia vào một thế giới đa dạng và thú vị. Tạo ra sự thoải mái và lựa chọn đa dạng cho người chơi khi tham gia tại nhà cái này.</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="small-content">
+                <div class="small-images">
+                    <div class="change active" style="border-radius: 1rem 0 0 0"> ĐÁ GÀ</div>
+                    <div class="change">CASINO</div>
+                    <div class="change">THỂ THAO</div>
+                    <div class="change">BẮN CÁ</div>
+                    <div class="change">SLOT</div>
+                </div>
+                  <h2>Slot game</h2>
+                <div id="big-image">
+                    <div id="center">
+                        <img src="https://hay88.works/wp-content/uploads/2024/03/da-ga.webp">
+                        <img src="https://hay88.works/wp-content/uploads/2024/03/casino.webp">
+                        <img src="https://hay88.works/wp-content/uploads/2024/03/the-thao.webp">
+                        <img src="https://hay88.works/wp-content/uploads/2024/03/ban-ca-1.webp">
+                        <img src="https://hay88.works/wp-content/uploads/2024/03/slot-no-hu.jpg">
+                    </div>
+                </div>
+                <div class="line">
+                    <p>Nếu bạn đăng ký tham gia <b>slot game</b>, bạn sẽ được hưởng những ưu đãi vô cùng hấp dẫn khi tham gia trò chơi slot game. Bạn có thể nhận ngay một khoản tiền khổng lồ từ nhà cái này, tạo điều kiện thuận lợi cho việc đạt được chiến thắng trong trò chơi này.
+                    Trong slot game, cách thức chơi rất đơn giản. Bạn chỉ cần nhấn nút và chờ cho các kết quả quay. Nếu có sự trùng khớp, bạn sẽ nhận được phần thưởng lớn. Với trò chơi này, bạn có thể tham gia mà không mất quá nhiều thời gian và công sức.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Khuyến mãi Hay88 với số tiền cực lớn</h2>
+            <div class="img-center">
+                <div class="image">
+                    <img src="img/hero14.webp" alt="">
+                </div>
+            </div>
+            <div class="line">
+                <p>Khi bạn tham gia tại <b>Hay88</b>, bạn sẽ được tham gia ngay vào các chương trình <span class="red">khuyến mãi Hay88</span> hấp dẫn dành cho người mới tham gia, với số tiền lớn được phân chia cho từng loại trò chơi. Điều này giúp người chơi dễ dàng lựa chọn trò chơi phù hợp và nhận được những ưu đãi đặc biệt hấp dẫn.</p>
+            </div>
+            <div class="line">
+                <p>Đối với những ai yêu thích cá cược thể thao, cung cấp một ưu đãi lớn khi bạn đăng ký mới, với khoản tiền khổng lồ lên đến hàng triệu đồng. Điều này là điều mà rất nhiều người chơi ở các nhà cái khác mong muốn nhưng không thể có được như ở Hay88.</p>
+            </div>
+            <div class="line">
+                <p>Ngoài ra, những ai tham gia nhận khuyến mãi tại <b>Hay88</b> cũng được hưởng ưu đãi đặc biệt cho các trò chơi hot như bắn cá, với khoản tiền thưởng lớn hơn 100% của số tiền nạp khi đăng ký Hay88. Điều này giúp người chơi không chỉ tham gia cá cược mà còn nhận được nhiều ưu đãi hấp dẫn, tạo điều kiện thuận lợi hơn cho việc chiến thắng và rút tiền.
+
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Những câu hỏi thường gặp</h2>
+            <div class="expand-collapse">
+                <h3>What are color codes?</h3>
+                <div>
+                    <p>Color codes are ways of representing the colors we see everyday in a format that a computer can interpret and display. Commonly used in websites and other software applications, there are a variety of formats, including Hex color codes, RGB and HSL values, and HTML color names, amongst others. </p>
+                </div>
+                <h3>What is material design?</h3>
+                <div>
+                    <p>Material design is a visual language and design system developed by Google with an almost flat style and vibrant color schemes. Material design is a visual language and design system developed by Google with an almost flat style and vibrant color schemes. Material design is a visual language and design system developed by Google with an almost flat style and vibrant color schemes.</p>
+                </div>
+                <h3>What is material design?</h3>
+                <div>
+                    <p>Material design is a visual language and design system developed by Google with an almost flat style and vibrant color schemes. Material design is a visual language and design system developed by Google with an almost flat style and vibrant color schemes. Material design is a visual language and design system developed by Google with an almost flat style and vibrant color schemes.</p>
+                </div>
+            </div>
+        </div>       
+        <div class="content">
+            <h2>Kết bài</h2>
+            <div class="line">
+                <p>Với tất cả những thông tin chúng tôi đã cung cấp cho bạn hiểu rõ hơn về <b>nhà cái Hay88</b> khi mà bạn tham gia tại đây sẽ dễ dàng trải nghiệm vô cùng tuyệt vời từ nhà cái này. Và thêm nữa bạn sẽ không còn phải lo gặp việc khi nạp tiền vào chơi cá cược không thể rút được khi tại đây luôn mang đến sự uy tín tốt nhất.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end of hero -->
+
+    <!-- footer -->
+    <div class="footer container-max-width">
+        <div class="box-grid">
+            <div class="box-footer">
+                <div class="title">
+                    <h3>
+                        Giới Thiệu HAY88
+                    </h3>
+                </div>
+                <div class="content">
+                    <div class="image">
+                     <img src="img/golo-footer.jpg" alt="">
+                    </div>
+                    <p>Nhà cái <span>HAY88</span> đảm bảo uy tín nhờ có giấy phép tổ chức cờ bạc quốc tế PAGCOR, Philippines. Sòng cá cược, game bài, casino, nổ hũ, bắn cá đẳng cấp.</p>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="title">
+                    <h3>
+                        Danh Mục Trang Web
+                    </h3>
+                </div>
+                <div class="content">
+                    <a href="#">Game Bài</a>
+                    <a href="#">Mẹo Chơi Cá Cược</a>
+                    <a href="#">Xổ Số - Lô Đề</a>
+                    <a href="#">Cược Bóng Đá</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="title">
+                    <h3>
+                        Trung Tâm Hỗ Trợ HAY88
+                    </h3>
+                </div>
+                <div class="content">
+                    <a href="#">Đăng Ký HAY88</a>
+                    <a href="#">Nạp Tiền HAY88</a>
+                    <a href="#">Rút Tiền HAY88</a>
+                    <a href="#">Khuyến Mãi HAY88</a>
+                </div>
+            </div>
+            <div class="box-footer">
+                <div class="title">
+                    <h3>
+                        Thông Tin Liên Hệ HAY88
+                    </h3>
+                </div>
+                <div class="content">
+                    <li class="item">
+                        <a class="image">
+                                <img src="img/phone.svg" alt="">
+                        </a>
+                        <span>09072568769</span>
+                    </li>
+                    <li class="item">
+                        <a class="image">
+                            <img src="img/email.svg" alt="">
+                        </a>
+                        <span> hay88.works@gmail.com</span>
+                    </li>
+                    <li class="item">
+                        <a class="image">
+                            <img src="img/world.svg" alt="">
+                        </a>
+                        <span>Phường 5, Tân Bình, Hồ Chí Minh</span>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+            <img src="img/img-footer.gif" alt="">
+        </div>
+    </div>
+    <!-- end of footer -->
+    <script src="js/app.js"></script>
+</body>
+</html>

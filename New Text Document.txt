@@ -1,0 +1,258 @@
+<div class="header ">
+            <div class="head-item ">
+                <div class="open-icon " onclick="OpenNav()"><i class="fa-solid fa-bars"></i></div>
+    
+                <div onclick="url()" class="logo cursor-pointer"><img src="./src/logo.png"></div>
+    
+                <nav id="Nav">
+                    <div class="close-icon opacity-80">
+                        <i onclick="CloseNav()" class="fa-solid fa-xmark"></i>
+                    </div>
+    
+                    <div class="wrap">
+                        <div class="search">
+                           <input type="text" class="searchTerm" placeholder="Search...">
+                           <button type="submit" class="searchButton">
+                             <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                     </div>
+    
+                    <ul class="nav-list ">
+                        <li>TRANG CHỦ</li>
+                        <li>KHUYẾN MÃI<i class="fa-solid fa-angle-down"></i></li>
+                        <li>ĐĂNG KÝ<i class="fa-solid fa-angle-down"></i></li>
+                        <li>HƯỚNG DẪN</li>
+                        <li>LIÊN HỆ</li>
+    
+                        <div class="flex p-3 md:hidden z-50">
+                            <i class="fa-solid fa-volume-high text-gray-800 text-3xl text-start w-20"></i>
+                            <marquee class="text-gray-900 text-2xl font-semibold" width="100%" direction="left">
+                                🎖️ HAY88 🎖️ TẶNG THƯỞNG NẠP LÊN TỚI 700.000 TRIỆU MỖI NGÀY 💥 THƯỞNG NẠP VIP 3% KHÔNG GIỚI HẠN 🎁 HOÀN TRẢ NGÀY LÊN ĐẾN 2,8% 🧧 THAM GIA ĐỂ NHẬN THƯỞNG NGAY HÔM NAY 🎉
+                            </marquee>
+                        </div>
+                    </ul>
+                </nav>
+    
+                <div class="log-item text-white hidden md:block">
+                    <button class="">ĐĂNG KÝ</button>
+                    <button class="">ĐĂNG NHẬP</button>
+                </div>
+            </div>
+    
+            <div class="btncenter text-gray-900 flex justify-center items-center md:hidden p-2">
+                <button class="">ĐĂNG KÝ</button>
+                <button class="">ĐĂNG NHẬP</button>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center bg-gray-200 p-3">
+                    <i class="fa-solid fa-volume-high text-gray-800 text-3xl text-start w-24 border-r border-gray-400"></i>
+                    <marquee class="text-gray-900 text-2xl font-semibold" width="100%" direction="left">
+                        🎖️ HAY88 🎖️ TẶNG THƯỞNG NẠP LÊN TỚI 700.000 TRIỆU MỖI NGÀY 💥 THƯỞNG NẠP VIP 3% KHÔNG GIỚI HẠN 🎁 HOÀN TRẢ NGÀY LÊN ĐẾN 2,8% 🧧 THAM GIA ĐỂ NHẬN THƯỞNG NGAY HÔM NAY 🎉
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
+
+
+
+ <style>
+        .header {
+            max-width: 1280px;
+            margin: auto;
+            z-index: 40;
+        }
+        
+        .head-item{
+            padding: 10px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .open-icon, .close-icon {
+            display: none;
+        }
+
+        
+        .logo{
+            max-width: 200px;
+        }
+        
+
+        .nav-list {
+            position: relative;
+            display: flex;
+            gap: 20px;
+        }
+
+        .log-item button{
+            background-color: brown;
+            padding: .8rem 1rem ;
+            border-radius: .5rem;
+        }
+        
+        .wrap{
+            display: none;
+        }
+
+        .search {
+            width: 100%;
+            position: relative;
+            display: flex;
+        }
+
+        .searchTerm {
+            width: 100%;
+            border: .1rem solid #646464;
+            border-right: none;
+            padding: 10px;
+            height: 40px;
+            outline: none;
+            font-size: 17px;
+        }
+
+        .searchTerm:focus{
+            color: rgb(145, 145, 145);
+
+        }
+
+        .searchButton {
+            width: 50px;
+            height: 40px;
+            border: 1px solid #2c8eff;
+            background: #2c8eff;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.7rem;
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .wrap{
+                 display: block;
+                 width: 100%;
+                 position: absolute;
+                 top: 0;
+                 padding: 5rem;
+                 z-index: -1;
+                 margin-top: 3rem;
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .head-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .open-icon {
+                display: block;
+                position: absolute;
+                left: 0;
+            }
+            .open-icon i{
+                font-size: 2.5rem;
+                padding: 0 3rem;
+            }
+            .close-icon {
+                display: flex;
+                justify-content: end;
+                opacity: 80;
+            }
+            
+            .close-icon i{
+                color: black;
+                padding: 2rem 3rem;
+                font-size: 2.5rem;
+                z-index: 10;
+            }
+
+            .nav-list{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 5rem;
+                z-index: -1;
+                margin-top: 10rem;
+            }
+
+            .nav-list li,
+            .nav-list li i{
+                color: rgb(145, 145, 145);
+                font-size: 1.7rem;
+            }
+            
+            .nav-list li{
+                width: 100%;
+                border-bottom: .1rem solid #eee;
+                padding: 10px 0;
+                z-index: 50;
+            }
+
+            .btncenter button{
+                /* margin-top: 1rem; */
+                background-color: brown;
+                color: #fff;
+                padding: .8rem 1rem ;
+                border-radius: .5rem;
+                font-size: 1.2rem;
+                margin: 0 .5rem;
+            }
+
+            nav {
+                background-color: #fff;
+                position: fixed !important;
+                width: 0%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                position: relative;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding: 0px !important;
+            }
+
+    }
+    </style>
+
+    var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          centeredSlides: true,
+          loop: true,
+          slidesPerView: 1,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+          },
+        });
+        function OpenNav(){
+    document.getElementById("Nav").style.width = "85%";
+    }
+    function CloseNav(){
+        document.getElementById("Nav").style.width = "0%";
+}
